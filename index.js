@@ -12,10 +12,10 @@ module.exports = class HyperswarmCapability {
   }
 
   verify (stream, key, capability) {
-    return b4a.equals(this.send(stream, key), capability)
+    return b4a.equals(this.generate(stream, key), capability)
   }
 
-  send (stream, key) {
+  generate (stream, key) {
     return this.capability(stream.isInitiator, key, stream.handshakeHash)
   }
 
