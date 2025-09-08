@@ -1,6 +1,6 @@
 {
   "name": "hyperswarm-capability",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Produce a stream coupled capability for a key",
   "main": "index.js",
   "scripts": {
