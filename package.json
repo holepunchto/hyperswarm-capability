@@ -1,0 +1,27 @@
+{
+  "name": "hyperswarm-capability",
+  "version": "0.0.0",
+  "description": "Produce a stream coupled capability for a key",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "b4a": "^1.6.7",
+    "hypercore-crypto": "^3.6.1",
+    "sodium-universal": "^5.0.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holepunchto/hyperswarm-capability.git"
+  },
+  "author": "Holepunch Inc",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/hyperswarm-capability/issues"
+  },
+  "homepage": "https://github.com/holepunchto/hyperswarm-capability"
+}
