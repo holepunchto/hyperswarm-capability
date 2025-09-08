@@ -20,6 +20,7 @@ module.exports = class HyperswarmCapability {
   }
 
   capability (isInitiator, key, handshakeHash) {
+    if (!handshakeHash) throw new Error('Cannot generate a capability without a handshake hash')
     const out = b4a.allocUnsafe(32)
     sodium.crypto_generichash_batch(out, [this.ns, isInitiator ? IS_INITIATOR : IS_RESPONDER, key], handshakeHash)
     return out
