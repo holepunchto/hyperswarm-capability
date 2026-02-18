@@ -1,12 +1,17 @@
 const sodium = require('sodium-universal')
 const crypto = require('hypercore-crypto')
 const b4a = require('b4a')
+const { getEncoding } = require('./spec/hyperschema')
+
+const Handshake = getEncoding('@rpc/handshake')
 
 const [NS] = crypto.namespace('hyperswarm-capability', 1)
 const IS_INITIATOR = b4a.from([1])
 const IS_RESPONDER = b4a.from([0])
 
 module.exports = class HyperswarmCapability {
+  static Encoding = Handshake
+
   constructor (ns = NS) {
     this.ns = ns
   }
