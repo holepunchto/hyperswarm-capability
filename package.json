@@ -13,10 +13,10 @@
   "dependencies": {
     "b4a": "^1.6.7",
     "hypercore-crypto": "^3.6.1",
+    "hyperschema": "^1.20.1",
     "sodium-universal": "^5.0.1"
   },
   "devDependencies": {
-    "hyperschema": "^1.20.1",
     "standard": "^17.1.2"
   },
   "repository": {
