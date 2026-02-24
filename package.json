@@ -4,7 +4,9 @@
   "description": "Produce a stream coupled capability for a key",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "lunte && npm run format:check"
   },
   "files": [
     "index.js",
@@ -17,7 +19,9 @@
     "sodium-universal": "^5.0.1"
   },
   "devDependencies": {
-    "standard": "^17.1.2"
+    "lunte": "^1.6.0",
+    "prettier": "^3.8.1",
+    "prettier-config-holepunch": "^2.0.0"
   },
   "repository": {
     "type": "git",

@@ -8,7 +8,7 @@ npm install hyperswarm-capability
 
 ## Usage
 
-``` js
+```js
 const HyperswarmCapability = require('hyperswarm-capability')
 
 const c = new HyperswarmCapability()
